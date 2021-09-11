@@ -151,20 +151,34 @@
 const countries = ["Germany", "Japan", "Canada", "Italy", "France", "Spain", "New Zealand", "Alaska", "Mexico", "China"];
 
 // FUNZIONI
-// Using filter only
+// Using forEach()
+// function arraySlicer(array,a,b) {
+//     let slicedCountries = [];
+//     countries.forEach((_,index) => {
+//         if (index >= a && index <= b ) {
+//             slicedCountries.push(array[index]);
+//         }
+//     })
+//     return slicedCountries;
+// }
+
+// console.log(arraySlicer(countries,3,6));
+
+
+// Using filter() only
 // function arraySlicer(array,a,b) {
 //     return array.filter((element,index) => (index >= a && index <= b));
 // }
 
 
-// Using filter and rest parameter
+// Using filter() and the rest parameter
 // function arraySlicer(array,...args) {
 //     args.sort();
 //     return array.filter((element,index) => (index >= args[0] && index <= args[1]));
 // }
 
 
-// Using filter, rest parameter and destructuring 
+// Using filter(), the rest parameter and destructuring 
 function arraySlicer(array,...args) {
     args.sort();
     let [a,b] = args;
