@@ -154,7 +154,7 @@ const countries = ["Germany", "Japan", "Canada", "Italy", "France", "Spain", "Ne
 // Using forEach()
 // function arraySlicer(array,a,b) {
 //     let slicedCountries = [];
-//     countries.forEach((_,index) => {
+//     array.forEach((_,index) => {
 //         if (index >= a && index <= b ) {
 //             slicedCountries.push(array[index]);
 //         }
@@ -185,4 +185,4 @@ function arraySlicer(array,...args) {
     return array.filter((_,index) => (index >= a && index <= b));
 }
 
-console.log(arraySlicer(countries,1,7));
+console.log(arraySlicer(countries,2,7));
